@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panelMenuLeds = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.botonConectarPuertoSerial = new System.Windows.Forms.Button();
+            this.botonApagar = new System.Windows.Forms.Button();
+            this.botonPrender = new System.Windows.Forms.Button();
             this.panelColorLed = new System.Windows.Forms.Panel();
             this.panelMenuColoresLed = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.botonCyan = new System.Windows.Forms.Button();
+            this.botonRosa = new System.Windows.Forms.Button();
+            this.botonAzul = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.botonAmarillo = new System.Windows.Forms.Button();
+            this.botonRojo = new System.Windows.Forms.Button();
+            this.botonBlanco = new System.Windows.Forms.Button();
+            this.botonVerde = new System.Windows.Forms.Button();
             this.labelPuertoActual = new System.Windows.Forms.Label();
             this.panelMenuLeds.SuspendLayout();
             this.panelColorLed.SuspendLayout();
@@ -52,41 +52,43 @@
             // 
             // panelMenuLeds
             // 
-            this.panelMenuLeds.Controls.Add(this.button1);
-            this.panelMenuLeds.Controls.Add(this.botonConectarPuertoSerial);
+            this.panelMenuLeds.Controls.Add(this.botonApagar);
+            this.panelMenuLeds.Controls.Add(this.botonPrender);
             this.panelMenuLeds.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMenuLeds.Location = new System.Drawing.Point(0, 288);
             this.panelMenuLeds.Name = "panelMenuLeds";
             this.panelMenuLeds.Size = new System.Drawing.Size(604, 73);
             this.panelMenuLeds.TabIndex = 0;
             // 
-            // button1
+            // botonApagar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(137, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Apagar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.botonApagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonApagar.FlatAppearance.BorderSize = 0;
+            this.botonApagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonApagar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonApagar.Location = new System.Drawing.Point(137, 3);
+            this.botonApagar.Name = "botonApagar";
+            this.botonApagar.Size = new System.Drawing.Size(150, 50);
+            this.botonApagar.TabIndex = 5;
+            this.botonApagar.Text = "Apagar";
+            this.botonApagar.UseVisualStyleBackColor = false;
+            this.botonApagar.Click += new System.EventHandler(this.botonApagar_Click);
             // 
-            // botonConectarPuertoSerial
+            // botonPrender
             // 
-            this.botonConectarPuertoSerial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.botonConectarPuertoSerial.FlatAppearance.BorderSize = 0;
-            this.botonConectarPuertoSerial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonConectarPuertoSerial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonConectarPuertoSerial.ForeColor = System.Drawing.Color.Gainsboro;
-            this.botonConectarPuertoSerial.Location = new System.Drawing.Point(293, 3);
-            this.botonConectarPuertoSerial.Name = "botonConectarPuertoSerial";
-            this.botonConectarPuertoSerial.Size = new System.Drawing.Size(150, 50);
-            this.botonConectarPuertoSerial.TabIndex = 4;
-            this.botonConectarPuertoSerial.Text = "Prender";
-            this.botonConectarPuertoSerial.UseVisualStyleBackColor = false;
+            this.botonPrender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonPrender.FlatAppearance.BorderSize = 0;
+            this.botonPrender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPrender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonPrender.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonPrender.Location = new System.Drawing.Point(293, 3);
+            this.botonPrender.Name = "botonPrender";
+            this.botonPrender.Size = new System.Drawing.Size(150, 50);
+            this.botonPrender.TabIndex = 4;
+            this.botonPrender.Text = "Prender";
+            this.botonPrender.UseVisualStyleBackColor = false;
+            this.botonPrender.Click += new System.EventHandler(this.botonPrender_Click);
             // 
             // panelColorLed
             // 
@@ -109,131 +111,138 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.botonCyan);
+            this.panel2.Controls.Add(this.botonRosa);
+            this.panel2.Controls.Add(this.botonAzul);
             this.panel2.Location = new System.Drawing.Point(293, 0);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(20);
             this.panel2.Size = new System.Drawing.Size(227, 257);
             this.panel2.TabIndex = 12;
             // 
-            // button7
+            // botonCyan
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button7.Location = new System.Drawing.Point(20, 120);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(187, 50);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Azul Claro";
-            this.button7.UseVisualStyleBackColor = false;
+            this.botonCyan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonCyan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.botonCyan.FlatAppearance.BorderSize = 0;
+            this.botonCyan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCyan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonCyan.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonCyan.Location = new System.Drawing.Point(20, 120);
+            this.botonCyan.Name = "botonCyan";
+            this.botonCyan.Size = new System.Drawing.Size(187, 50);
+            this.botonCyan.TabIndex = 9;
+            this.botonCyan.Text = "Cyan";
+            this.botonCyan.UseVisualStyleBackColor = false;
+            this.botonCyan.Click += new System.EventHandler(this.botonCyan_Click);
             // 
-            // button8
+            // botonRosa
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button8.Location = new System.Drawing.Point(20, 70);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(187, 50);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Rosa";
-            this.button8.UseVisualStyleBackColor = false;
+            this.botonRosa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonRosa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.botonRosa.FlatAppearance.BorderSize = 0;
+            this.botonRosa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonRosa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonRosa.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonRosa.Location = new System.Drawing.Point(20, 70);
+            this.botonRosa.Name = "botonRosa";
+            this.botonRosa.Size = new System.Drawing.Size(187, 50);
+            this.botonRosa.TabIndex = 10;
+            this.botonRosa.Text = "Rosa";
+            this.botonRosa.UseVisualStyleBackColor = false;
+            this.botonRosa.Click += new System.EventHandler(this.botonRosa_Click);
             // 
-            // button6
+            // botonAzul
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button6.Location = new System.Drawing.Point(20, 20);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(187, 50);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Azul Marino";
-            this.button6.UseVisualStyleBackColor = false;
+            this.botonAzul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonAzul.Dock = System.Windows.Forms.DockStyle.Top;
+            this.botonAzul.FlatAppearance.BorderSize = 0;
+            this.botonAzul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonAzul.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonAzul.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonAzul.Location = new System.Drawing.Point(20, 20);
+            this.botonAzul.Name = "botonAzul";
+            this.botonAzul.Size = new System.Drawing.Size(187, 50);
+            this.botonAzul.TabIndex = 8;
+            this.botonAzul.Text = "Azul Marino";
+            this.botonAzul.UseVisualStyleBackColor = false;
+            this.botonAzul.Click += new System.EventHandler(this.botonAzul_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.botonAmarillo);
+            this.panel1.Controls.Add(this.botonRojo);
+            this.panel1.Controls.Add(this.botonBlanco);
+            this.panel1.Controls.Add(this.botonVerde);
             this.panel1.Location = new System.Drawing.Point(60, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(20);
             this.panel1.Size = new System.Drawing.Size(227, 257);
             this.panel1.TabIndex = 11;
             // 
-            // button3
+            // botonAmarillo
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Location = new System.Drawing.Point(20, 170);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(187, 50);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Amarillo";
-            this.button3.UseVisualStyleBackColor = false;
+            this.botonAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.botonAmarillo.FlatAppearance.BorderSize = 0;
+            this.botonAmarillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonAmarillo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonAmarillo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonAmarillo.Location = new System.Drawing.Point(20, 170);
+            this.botonAmarillo.Name = "botonAmarillo";
+            this.botonAmarillo.Size = new System.Drawing.Size(187, 50);
+            this.botonAmarillo.TabIndex = 5;
+            this.botonAmarillo.Text = "Amarillo";
+            this.botonAmarillo.UseVisualStyleBackColor = false;
+            this.botonAmarillo.Click += new System.EventHandler(this.Amarillo_Click);
             // 
-            // button4
+            // botonRojo
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Location = new System.Drawing.Point(20, 120);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(187, 50);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Rojo";
-            this.button4.UseVisualStyleBackColor = false;
+            this.botonRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonRojo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.botonRojo.FlatAppearance.BorderSize = 0;
+            this.botonRojo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonRojo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonRojo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonRojo.Location = new System.Drawing.Point(20, 120);
+            this.botonRojo.Name = "botonRojo";
+            this.botonRojo.Size = new System.Drawing.Size(187, 50);
+            this.botonRojo.TabIndex = 6;
+            this.botonRojo.Text = "Rojo";
+            this.botonRojo.UseVisualStyleBackColor = false;
+            this.botonRojo.Click += new System.EventHandler(this.botonRojo_Click);
             // 
-            // button2
+            // botonBlanco
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Location = new System.Drawing.Point(20, 70);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 50);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Blanco";
-            this.button2.UseVisualStyleBackColor = false;
+            this.botonBlanco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonBlanco.Dock = System.Windows.Forms.DockStyle.Top;
+            this.botonBlanco.FlatAppearance.BorderSize = 0;
+            this.botonBlanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonBlanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonBlanco.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonBlanco.Location = new System.Drawing.Point(20, 70);
+            this.botonBlanco.Name = "botonBlanco";
+            this.botonBlanco.Size = new System.Drawing.Size(187, 50);
+            this.botonBlanco.TabIndex = 4;
+            this.botonBlanco.Text = "Blanco";
+            this.botonBlanco.UseVisualStyleBackColor = false;
+            this.botonBlanco.Click += new System.EventHandler(this.botonBlanco_Click);
             // 
-            // button5
+            // botonVerde
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.Location = new System.Drawing.Point(20, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(187, 50);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Verde";
-            this.button5.UseVisualStyleBackColor = false;
+            this.botonVerde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.botonVerde.Dock = System.Windows.Forms.DockStyle.Top;
+            this.botonVerde.FlatAppearance.BorderSize = 0;
+            this.botonVerde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonVerde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonVerde.ForeColor = System.Drawing.Color.Gainsboro;
+            this.botonVerde.Location = new System.Drawing.Point(20, 20);
+            this.botonVerde.Name = "botonVerde";
+            this.botonVerde.Size = new System.Drawing.Size(187, 50);
+            this.botonVerde.TabIndex = 7;
+            this.botonVerde.Text = "Verde";
+            this.botonVerde.UseVisualStyleBackColor = false;
+            this.botonVerde.Click += new System.EventHandler(this.botonVerde_Click);
             // 
             // labelPuertoActual
             // 
@@ -272,15 +281,15 @@
         private System.Windows.Forms.Panel panelMenuLeds;
         private System.Windows.Forms.Panel panelColorLed;
         private System.Windows.Forms.Panel panelMenuColoresLed;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button botonConectarPuertoSerial;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button botonApagar;
+        private System.Windows.Forms.Button botonPrender;
+        private System.Windows.Forms.Button botonRosa;
+        private System.Windows.Forms.Button botonCyan;
+        private System.Windows.Forms.Button botonAzul;
+        private System.Windows.Forms.Button botonVerde;
+        private System.Windows.Forms.Button botonRojo;
+        private System.Windows.Forms.Button botonAmarillo;
+        private System.Windows.Forms.Button botonBlanco;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelPuertoActual;

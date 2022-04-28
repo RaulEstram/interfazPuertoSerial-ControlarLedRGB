@@ -12,12 +12,17 @@ namespace flatUISerialPort
 {
     public partial class Form1 : Form
     {
+        // variables para form del serial port
         public static Form1 instance;
         public static System.IO.Ports.SerialPort serialPortMain;
         public static bool estadoConectado;
         public static bool estadoDesconectado;
         public static string puertoSerialConectado = "No Esta conectado";
         public static bool conectado = false;
+
+        // vairables para el form del control del led
+
+        public static bool ledPrendido;
 
         // fields
         private Button currentButton;

@@ -90,6 +90,8 @@ namespace flatUISerialPort.Forms
         {
             if (Form1.serialPortMain.IsOpen)
             {
+                Form1.serialPortMain.Write("H");
+                Form1.ledPrendido = false;
                 Form1.serialPortMain.Close();
                 opcionesporDefecto();
                 Form1.conectado = false;
