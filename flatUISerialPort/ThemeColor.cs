@@ -15,8 +15,11 @@ namespace flatUISerialPort
             "#581845",
             "#C70039",
             "#FF5733",
-            "#FFC300",
-            "#DAF7A6"
+            "#1D5C63",
+            "#E04D01",
+            "#DA0037",
+            "#C84B31",
+            "#261C2C"
         };
 
         public static Color cambiarBrilloColor(Color color, double correctionFactor) { 
