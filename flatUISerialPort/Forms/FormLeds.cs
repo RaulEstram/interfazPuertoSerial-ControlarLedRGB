@@ -19,6 +19,7 @@ namespace flatUISerialPort.Forms
 
         private void FormLeds_Load(object sender, EventArgs e)
         {
+            loadTheme();
             cargarDatos();
 
             if (Form1.ledPrendido && Form1.conectado)
@@ -28,6 +29,7 @@ namespace flatUISerialPort.Forms
             else {
                 cargarConfiguracionApagado();
             }
+            
 
         }
 
@@ -136,6 +138,22 @@ namespace flatUISerialPort.Forms
                     Form1.serialPortMain.Write("I");
                 }
             }
+        }
+
+        // metodos theme
+        private void loadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.primatyColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.secondColor;
+                }
+            }
+
         }
     }
 }

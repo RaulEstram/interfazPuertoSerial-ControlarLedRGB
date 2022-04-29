@@ -70,6 +70,7 @@
             // 
             // botonConectarPuertoSerial
             // 
+            this.botonConectarPuertoSerial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.botonConectarPuertoSerial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.botonConectarPuertoSerial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonConectarPuertoSerial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,6 +85,7 @@
             // 
             // botonActualizarPuertosSeriales
             // 
+            this.botonActualizarPuertosSeriales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.botonActualizarPuertosSeriales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.botonActualizarPuertosSeriales.FlatAppearance.BorderSize = 0;
             this.botonActualizarPuertosSeriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -99,6 +101,7 @@
             // 
             // botonDesconectarPuertoSerial
             // 
+            this.botonDesconectarPuertoSerial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.botonDesconectarPuertoSerial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.botonDesconectarPuertoSerial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonDesconectarPuertoSerial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -124,7 +127,7 @@
             this.Controls.Add(this.labelPuertoSerial);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "FormSerialPort";
-            this.Text = "FormSerialPort";
+            this.Text = "Configuracion Puerto Serial";
             this.Load += new System.EventHandler(this.FormSerialPort_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

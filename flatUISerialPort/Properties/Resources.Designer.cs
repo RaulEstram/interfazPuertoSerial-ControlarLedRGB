@@ -63,6 +63,26 @@ namespace flatUISerialPort.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hehe {
+            get {
+                object obj = ResourceManager.GetObject("hehe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap serialPort {
             get {
                 object obj = ResourceManager.GetObject("serialPort", resourceCulture);
@@ -76,6 +96,16 @@ namespace flatUISerialPort.Properties {
         internal static System.Drawing.Bitmap serialPort1 {
             get {
                 object obj = ResourceManager.GetObject("serialPort1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waifuhome {
+            get {
+                object obj = ResourceManager.GetObject("waifuhome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

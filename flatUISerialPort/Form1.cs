@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,6 +37,21 @@ namespace flatUISerialPort
             random = new Random();
             instance = this;
             serialPortMain = serialPortHome;
+            closeChild.Visible = false;
+            this.Text = String.Empty;
+            this.ControlBox = false;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private static extern void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
         // metodos click botones
@@ -53,7 +69,7 @@ namespace flatUISerialPort
 
         private void botonMenuOtros_Click(object sender, EventArgs e)
         {
-            activarBoton(sender);
+            openChildForm(new Forms.Otros(), sender);
         }
 
         // metodos Colores e Interfaz
@@ -81,6 +97,9 @@ namespace flatUISerialPort
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panelTitleBar.BackColor = color;
                     panelLogo.BackColor = ThemeColor.cambiarBrilloColor(color, -0.3 );
+                    ThemeColor.primatyColor = color;
+                    ThemeColor.secondColor = ThemeColor.cambiarBrilloColor(color, -0.3);
+                    closeChild.Visible = true;
                 }
             }
         }
@@ -89,7 +108,7 @@ namespace flatUISerialPort
         foreach(Control previousBtn in panelMenu.Controls)
             {
                 if (previousBtn.GetType() == typeof(Button)) {
-                    previousBtn.BackColor = Color.FromArgb(144, 12, 63);
+                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
                     previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
@@ -108,14 +127,63 @@ namespace flatUISerialPort
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.panelDesktopPanel.Controls.Add(childForm);
-            this.panelDesktopPanel.Tag = childForm;
+            panelDesktopPanel.Controls.Add(childForm);
+            panelDesktopPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
             labelTitulo.Text = childForm.Text;
         }
 
+        private void closeChild_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null) {
+                activeForm.Close();
+            }
+            Reset();
+        }
 
-        
+        private void Reset() {
+            desactivarBoton();
+            labelTitulo.Text = "HOME";
+            panelTitleBar.BackColor = Color.FromArgb(0,150,136);
+            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
+            currentButton = null;
+            closeChild.Visible = false;
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void maximizar_Click_1(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panelTitleBar_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
     }
 }

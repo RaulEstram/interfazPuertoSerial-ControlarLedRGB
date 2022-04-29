@@ -64,6 +64,12 @@
     <Compile Include="Forms\FormSerialPort.Designer.cs">
       <DependentUpon>FormSerialPort.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Otros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Otros.Designer.cs">
+      <DependentUpon>Otros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSerialPort.resx">
       <DependentUpon>FormSerialPort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Otros.resx">
+      <DependentUpon>Otros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +113,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\serialPort1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hehe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waifuhome.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

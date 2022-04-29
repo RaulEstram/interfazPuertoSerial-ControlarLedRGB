@@ -26,6 +26,7 @@ namespace flatUISerialPort.Forms
 
         private void FormSerialPort_Load(object sender, EventArgs e)
         {
+            loadTheme();
             cargarPuertosSeriales();
             opcionesporDefecto();
             if (Form1.conectado)
@@ -99,6 +100,19 @@ namespace flatUISerialPort.Forms
             }
         }
 
+        // metodos theme
+
+        private void loadTheme() {
+            foreach (Control btns in this.Controls) {
+                if (btns.GetType() == typeof(Button)) { 
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.primatyColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.secondColor;
+                }
+            }
+        
+        }
  
     }
 }

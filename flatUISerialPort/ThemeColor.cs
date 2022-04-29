@@ -9,6 +9,8 @@ namespace flatUISerialPort
 {
     public static class ThemeColor
     {
+        public static Color primatyColor { get; set; }
+        public static Color secondColor { get; set; }
         public static List<string> colors = new List<string>() {
             "#581845",
             "#C70039",

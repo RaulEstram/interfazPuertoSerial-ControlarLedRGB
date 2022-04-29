@@ -11,3 +11,4 @@ C:\micro\Interfaces\Tarea 2\flatUISerialPort\flatUISerialPort\obj\Debug\flatUISe
 C:\micro\Interfaces\Tarea 2\flatUISerialPort\flatUISerialPort\obj\Debug\flatUISerialPort.pdb
 C:\micro\Interfaces\Tarea 2\flatUISerialPort\flatUISerialPort\obj\Debug\flatUISerialPort.Forms.FormSerialPort.resources
 C:\micro\Interfaces\Tarea 2\flatUISerialPort\flatUISerialPort\obj\Debug\flatUISerialPort.Forms.FormLeds.resources
+C:\micro\Interfaces\Tarea 2\flatUISerialPort\flatUISerialPort\obj\Debug\flatUISerialPort.Forms.Otros.resources
